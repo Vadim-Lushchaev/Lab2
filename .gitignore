@@ -5,3 +5,7 @@
 /Lab2/x64/Debug
 /x64/Debug
 /.vs/Lab2
+/.idea/.idea.Lab2/.idea
+/Debug
+/Lab2/Debug
+/packages/gtest.1.7.0
