@@ -7,11 +7,11 @@
 struct uint2022_t {
     uint8_t* data = nullptr;
     // Положение крайнего значащего байта числа
-    uint16_t position;
+    uint8_t position; 
     // Размер числа в байтах
     uint16_t bytes_size;
     uint16_t bits_size;
-
+    static const uint16_t base = 100;
     uint2022_t(const uint16_t bits_size = 2022)
     {
         position = 0;

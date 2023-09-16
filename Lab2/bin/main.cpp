@@ -6,18 +6,42 @@ using namespace std;
 int main()
 {
     uint2022_t num1, num2, res;
-    //num1 = from_uint(257);
-    num1 = from_uint(33);
-    num2 = from_string("6747564776826987624985764875689234765987234659872346587658");
-    res = num2 + num1;
+    num1 = from_uint(999999);
+    num2 = from_string("999999");
 
-    //cout << num1.position << '\n';
-    cout << num1 << '\n';
+    cout << "NUM1: " << num1 << '\n';
+    cout << "NUM2: " << num2 << '\n';
+    res = num1 + num2;
+    cout << "NUM1 + NUM2 = " << res << '\n';
+    res = num1 - num2;
+    cout << "NUM1 - NUM2 = " << res << '\n';
+    res = num1 * num2;
+    cout << "NUM1 * NUM2 = " << res << '\n';
 
-    //cout << num2.position << '\n';
-    cout << num2 << '\n';
+    if (num1 == num2)
+    {
+        cout << "num1 = num2" << '\n';
+    }
+    if (num1 != num2)
+    {
+        cout << "num1 != num2" << '\n';
+    }
+    if (num1 == res)
+    {
+        cout << "num1 = res" << '\n';
+    }
+    if (num1 != res)
+    {
+        cout << "num1 != res" << '\n';
+    }
+    if (num2 == res)
+    {
+        cout << "num1 = res" << '\n';
+    }
+    if (num2 != res)
+    {
+        cout << "num1 != res" << '\n';
+    }
 
-    //cout << res.position << '\n';
-    cout << res;
     return 0;
 }
