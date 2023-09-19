@@ -1,20 +1,17 @@
-/*
-#include "../lib/number.h"
-#include "../lib/number.cpp"
 #include "gtest/gtest.h"
-#include <tuple>
+#include "../Lab2/lib/number.cpp"
 
 class ConvertingTestsSuite : public testing::TestWithParam<std::tuple<uint32_t, const char*, bool>> {
 };
 
 TEST_P(ConvertingTestsSuite, EqualTest) {
-    uint2022_t a = from_uint(std::get<0>(GetParam()));
-    uint2022_t b = from_string(std::get<1>(GetParam()));
+  uint2022_t a = from_uint(std::get<0>(GetParam()));
+  uint2022_t b = from_string(std::get<1>(GetParam()));
 
-    if(std::get<2>(GetParam()))
-        ASSERT_EQ(a,b) << std::get<0>(GetParam()) << " == " << std::get<1>(GetParam());
-    else
-        ASSERT_NE(a,b) << std::get<0>(GetParam()) << " != " << std::get<1>(GetParam());
+  if(std::get<2>(GetParam()))
+    ASSERT_EQ(a,b) << std::get<0>(GetParam()) << " == " << std::get<1>(GetParam());
+  else
+    ASSERT_NE(a,b) << std::get<0>(GetParam()) << " != " << std::get<1>(GetParam());
 }
 
 INSTANTIATE_TEST_CASE_P(
@@ -41,7 +38,6 @@ INSTANTIATE_TEST_CASE_P(
         std::make_tuple(2147483647,"2147483648", false)
     )
 );
-
 
 class OperationTestsSuite
     : public testing::TestWithParam<
@@ -112,4 +108,3 @@ INSTANTIATE_TEST_CASE_P(
         )
     )
 );
-*/
